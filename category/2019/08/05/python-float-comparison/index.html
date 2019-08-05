@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="to boldly go where no man has gone before.">
+<meta name="description" content="Python中浮点变量相等的比较浮点型数据的近似表示&amp;emsp;&amp;emsp;与整型变量采用精确表示不同，浮点型变量采用的是近似表示，浮点计算天然就是不精确的，所以浮点类型的相等比较不能够采用整型变量的方式，也就是说不能直接使用”==”进行比较。&amp;emsp;&amp;emsp;先看下面例子，其中定义了两个浮点型变量： 123a = 0.1b = 0.1 * 3c = 0.3 把这两个变量打印出来看一下： 1">
 <meta name="keywords" content="ai, artificial intelligence, algorithm, machine learning, deep learning">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://aitrek.github.io/about/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python float comparison">
+<meta property="og:url" content="https://aitrek.github.io/category/2019/08/05/python-float-comparison/index.html">
 <meta property="og:site_name" content="aitrek">
-<meta property="og:description" content="to boldly go where no man has gone before.">
+<meta property="og:description" content="Python中浮点变量相等的比较浮点型数据的近似表示&amp;emsp;&amp;emsp;与整型变量采用精确表示不同，浮点型变量采用的是近似表示，浮点计算天然就是不精确的，所以浮点类型的相等比较不能够采用整型变量的方式，也就是说不能直接使用”==”进行比较。&amp;emsp;&amp;emsp;先看下面例子，其中定义了两个浮点型变量： 123a = 0.1b = 0.1 * 3c = 0.3 把这两个变量打印出来看一下： 1">
 <meta property="og:locale" content="-zh-CN -en">
-<meta property="og:updated_time" content="2019-04-22T08:40:44.873Z">
+<meta property="og:updated_time" content="2019-08-05T10:55:14.964Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="to boldly go where no man has gone before.">
+<meta name="twitter:title" content="python float comparison">
+<meta name="twitter:description" content="Python中浮点变量相等的比较浮点型数据的近似表示&amp;emsp;&amp;emsp;与整型变量采用精确表示不同，浮点型变量采用的是近似表示，浮点计算天然就是不精确的，所以浮点类型的相等比较不能够采用整型变量的方式，也就是说不能直接使用”==”进行比较。&amp;emsp;&amp;emsp;先看下面例子，其中定义了两个浮点型变量： 123a = 0.1b = 0.1 * 3c = 0.3 把这两个变量打印出来看一下： 1">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://aitrek.github.io/about/">
+  <link rel="canonical" href="https://aitrek.github.io/category/2019/08/05/python-float-comparison/">
 
 
 
 
 
-  <title>about | aitrek</title>
+  <title>python float comparison | aitrek</title>
   
 
 
@@ -293,33 +293,163 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://aitrek.github.io/category/2019/08/05/python-float-comparison/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="aitrek">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="aitrek">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">python float comparison</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-05T18:55:14+08:00">
+                2019-08-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="Python中浮点变量相等的比较"><a href="#Python中浮点变量相等的比较" class="headerlink" title="Python中浮点变量相等的比较"></a>Python中浮点变量相等的比较</h2><h3 id="浮点型数据的近似表示"><a href="#浮点型数据的近似表示" class="headerlink" title="浮点型数据的近似表示"></a>浮点型数据的近似表示</h3><p>&emsp;&emsp;与整型变量采用精确表示不同，浮点型变量采用的是近似表示，浮点计算天然就是不精确的，所以浮点类型的相等比较不能够采用整型变量的方式，也就是说不能直接使用”==”进行比较。<br><br><br>&emsp;&emsp;先看下面例子，其中定义了两个浮点型变量：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">0.1</span></span><br><span class="line">b = <span class="number">0.1</span> * <span class="number">3</span></span><br><span class="line">c = <span class="number">0.3</span></span><br></pre></td></tr></table></figure>
+<p>把这两个变量打印出来看一下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"a = "</span>, a)</span><br><span class="line">print(<span class="string">"b = "</span>, b)</span><br><span class="line">print(<span class="string">"c = "</span>, c)</span><br></pre></td></tr></table></figure>
+<pre><code>a =  0.1
+b =  0.30000000000000004
+c =  0.3
+</code></pre><p>&emsp;&emsp;变量a的值与我们所期望在形式上保持一致，而变量b的值却有点出乎意料。然而，从浮点型数据近似角度考虑，b值的表示形式才是更加合理的一个，为什么这么说呢？因为Python对浮点变量的近似做了隐藏处理，在外部显示时采用了最短近似表示，使这些近似值尽可能看起来像个精确值，如果想看一下内部的真实近似值，可以用下面方式：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> decimal <span class="keyword">import</span> Decimal</span><br><span class="line"></span><br><span class="line">print(<span class="string">"decimal a: "</span>, Decimal(a))</span><br><span class="line">print(<span class="string">"decimal b: "</span>, Decimal(b))</span><br><span class="line">print(<span class="string">"decimal c: "</span>, Decimal(c))</span><br></pre></td></tr></table></figure>
+<pre><code>decimal a:  0.1000000000000000055511151231257827021181583404541015625
+decimal b:  0.3000000000000000444089209850062616169452667236328125
+decimal c:  0.299999999999999988897769753748434595763683319091796875
+</code></pre><h3 id="浮点型变量相等的比较"><a href="#浮点型变量相等的比较" class="headerlink" title="浮点型变量相等的比较"></a>浮点型变量相等的比较</h3><p>&emsp;&emsp;有了上面的decimal形式，我们就很容易理解直接采用“==”比较浮点数据的结果之所以为False了 — $0.1 * 3$和$0.3$的实际上根本就是两个不相同的近似值，它们比较的结果必然False：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0.1</span> * <span class="number">3</span> == <span class="number">0.3</span></span><br></pre></td></tr></table></figure>
+<pre><code>False
+</code></pre><p>&emsp;&emsp;所以，就有了这么一种说法“不要对浮点数据进行等值比较”，因为通常情况下对近似值进行这样的比较是毫无意义的。那么，问题来了，计算机系统中近似值表示方式导致毫无意义的比较，在现实中却是大量存在的，例如两个点之间距离是否相等的比较，既然不能使用“==”比较，那要怎么办呢？解决办法就是指定精度范围再进行比较。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">almost_equal</span><span class="params">(f1, f2, tol=<span class="number">1e-9</span>)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> abs(f1 - f2) &lt; tol</span><br><span class="line"></span><br><span class="line">is_close(<span class="number">0.1</span> * <span class="number">3</span>, <span class="number">0.3</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>True
+</code></pre><p>&emsp;&emsp;主流编程语言都可以采用这用方式对浮点型数据进行近似相等比较，Python还可以使用内置的round()函数，用下面方式比较：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(round(<span class="number">0.1</span> * <span class="number">3</span>, <span class="number">9</span>) == round(<span class="number">0.3</span>, <span class="number">9</span>))</span><br><span class="line">print(round(<span class="number">0.1</span> * <span class="number">3</span>, <span class="number">19</span>) == round(<span class="number">0.3</span>, <span class="number">19</span>))</span><br></pre></td></tr></table></figure>
+<pre><code>True
+False
+</code></pre><h3 id="References"><a href="#References" class="headerlink" title="References:"></a>References:</h3><ol>
+<li>Python Algorithms by Magnus Lie Hetland.</li>
+<li><a href="https://docs.python.org/2/tutorial/floatingpoint.html" target="_blank" rel="noopener">https://docs.python.org/2/tutorial/floatingpoint.html</a></li>
+</ol>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/category/2019/04/22/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -352,8 +482,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -413,6 +552,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python中浮点变量相等的比较"><span class="nav-number">1.</span> <span class="nav-text">Python中浮点变量相等的比较</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#浮点型数据的近似表示"><span class="nav-number">1.1.</span> <span class="nav-text">浮点型数据的近似表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮点型变量相等的比较"><span class="nav-number">1.2.</span> <span class="nav-text">浮点型变量相等的比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#References"><span class="nav-number">1.3.</span> <span class="nav-text">References:</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
