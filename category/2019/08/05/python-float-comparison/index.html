@@ -383,6 +383,9 @@ False
 
           </div>
           
+    
+    <div class="comments" id="gitalk-container"></div>
+  
 
         </div>
           
@@ -606,6 +609,26 @@ False
   <script src="/js/scrollspy.js?v=7.3.0"></script>
 <script src="/js/post-details.js?v=7.3.0"></script>
 
+
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', function() {
+    var gitalk = new Gitalk({
+      clientID: 'c20a425bc08b44307f6c',
+      clientSecret: '2c5a0ba77be6e85f82a27e13b7f09cf068befd97',
+      repo: 'aitrek.github.io',
+      owner: 'aitrek',
+      admin: ['aitrek'],
+      id: 'c882f1c6909e513b990fe945fce7713a',
+        language: window.navigator.language || window.navigator.userLanguage,
+      
+      distractionFreeMode: 'true'
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+</script>
 
 </body>
 </html>
